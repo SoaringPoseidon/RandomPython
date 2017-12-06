@@ -31,6 +31,33 @@ def main():
     for x in fl:
         print (x)
 
+def square_numbers(nums):
+    result = []
+    for i in nums:
+        result.append(i*i);
+    return result
+
+def square_numbers_gen(nums):
+    for i in nums:
+        yield (i*i)
+
+def test_generator():
+    nums=[1,2,3,4,5,6]
+    print (square_numbers(nums))
+
+    nums_gen = square_numbers_gen(nums)
+    print (next(nums_gen))
+    print (next(nums_gen))
+    print (next(nums_gen))
+    print (next(nums_gen))
+    print (next(nums_gen))
+
+    nums_gen2 = square_numbers_gen(nums)
+    for i in nums_gen2:
+        print(i)
+
+
 if ( __name__ == "__main__"):
-    main()
+#    main()
+    test_generator()
  
