@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>7eba3d21-59e2-401d-9f43-e0aa4d05c324</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>xmlparsing.py</StartupFile>
+    <StartupFile>Decoraters.py</StartupFile> <!-- change this name to change start up file -->
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
