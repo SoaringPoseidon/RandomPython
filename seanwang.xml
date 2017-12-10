@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person>
+  <firstname>Sean</firstname>
+  <lastname>Wang</lastname>
+  <home>Earth</home>
+  <skill name="tennis"/>
+  <skill name="python"/>
+  <skill name="c++"/>
+  <iq>infinite</iq>
+</person>
