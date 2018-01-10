@@ -37,6 +37,7 @@ def square_numbers(nums):
         result.append(i*i);
     return result
 
+#Generator example
 def square_numbers_gen(nums):
     for i in nums:
         yield (i*i)
