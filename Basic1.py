@@ -3,7 +3,6 @@ import os
 print ("hello world")
 
 
-
 f = "abc"
 #def main():
  #   print("Hello WOrld")
@@ -23,7 +22,14 @@ def main():
         print (i," ", sep='|', end='') # end='' supress new line for each print. sep='|' user | as seperator
         #print (i)
     else:
-        print ("dont printing") # else for for statement. Only execute if all elements have been iterated. 
+        print ("done printing") # else for for statement. Only execute if all elements have been iterated. 
+
+    z = """
+     This is a multi 
+       line string """
+
+    print (z)
+
 
 def print_dir_contents(dir):
     import os # this is not going to be imported multiple times even if this function is called many times. Because it's cached 
@@ -35,9 +41,9 @@ def print_dir_contents(dir):
 
 if __name__ == "__main__":
     print("Called from main")
-    #main()
+    main()
    # prrint_dir_contents(os.path.basename(os.path.dirname(os.path.realpath(__file__))))
-    print_dir_contents(os.path.dirname(os.path.realpath(__file__)))
+    #print_dir_contents(os.path.dirname(os.path.realpath(__file__)))
 else:
     print("Not called from main")
 
@@ -58,7 +64,7 @@ print(multi_add(3,4,5,6))
 x, y = 10, 100
 
 
-st = "x is greater than y" if (x>y) else "x is less than or equal to y" #NICE
+st = "x is greater than y" if (x>y) else "x is less than or equal to y" #NICE. This is tenary operation in python
 print (st)
 
 for x in range (4, 9):
